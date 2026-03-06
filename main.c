@@ -76,22 +76,22 @@ int main(int argc, char *argv[])
         for (int x = 0; x < SIZE; x++) {
             for (int y = 0; y < SIZE; y++) {
                 uint8_t color = (uint8_t)((matrix[x][y] * 15) / max_val);
-                if      (color == 0)  { SDL_SetRenderDrawColor(renderer, 10,  20,  80,  255); }  // Océan profond
-                else if (color == 1)  { SDL_SetRenderDrawColor(renderer, 20,  60,  160, 255); }  // Eau profonde
-                else if (color == 2)  { SDL_SetRenderDrawColor(renderer, 50,  100, 200, 255); }  // Eau moyenne
-                else if (color == 3)  { SDL_SetRenderDrawColor(renderer, 80,  140, 210, 255); }  // Eau peu profonde
-                else if (color == 4)  { SDL_SetRenderDrawColor(renderer, 210, 200, 140, 255); }  // Plage / Sable humide
-                else if (color == 5)  { SDL_SetRenderDrawColor(renderer, 230, 215, 120, 255); }  // Sable sec
-                else if (color == 6)  { SDL_SetRenderDrawColor(renderer, 160, 120, 60,  255); }  // Terre nue
-                else if (color == 7)  { SDL_SetRenderDrawColor(renderer, 100, 140, 60,  255); }  // Herbe rare / savane
-                else if (color == 8)  { SDL_SetRenderDrawColor(renderer, 60,  130, 40,  255); }  // Herbe normale
-                else if (color == 9)  { SDL_SetRenderDrawColor(renderer, 34,  90,  20,  255); }  // Herbe dense / forêt
-                else if (color == 10) { SDL_SetRenderDrawColor(renderer, 20,  60,  20,  255); }  // Forêt sombre / jungle
-                else if (color == 11) { SDL_SetRenderDrawColor(renderer, 140, 130, 120, 255); }  // Roche / pierre
-                else if (color == 12) { SDL_SetRenderDrawColor(renderer, 160, 150, 140, 255); }  // Montagne
-                else if (color == 13) { SDL_SetRenderDrawColor(renderer, 200, 195, 190, 255); }  // Sommet rocheux
-                else if (color == 14) { SDL_SetRenderDrawColor(renderer, 235, 240, 245, 255); }  // Neige légère
-                else if (color == 15) { SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); }  // Neige épaisse / sommet
+                if      (color == 0)  { SDL_SetRenderDrawColor(renderer, 10,  20,  80,  255); }  
+                else if (color == 1)  { SDL_SetRenderDrawColor(renderer, 20,  60,  160, 255); } 
+                else if (color == 2)  { SDL_SetRenderDrawColor(renderer, 50,  100, 200, 255); }  
+                else if (color == 3)  { SDL_SetRenderDrawColor(renderer, 80,  140, 210, 255); }  
+                else if (color == 4)  { SDL_SetRenderDrawColor(renderer, 210, 200, 140, 255); }  
+                else if (color == 5)  { SDL_SetRenderDrawColor(renderer, 230, 215, 120, 255); }  
+                else if (color == 6)  { SDL_SetRenderDrawColor(renderer, 160, 120, 60,  255); }  
+                else if (color == 7)  { SDL_SetRenderDrawColor(renderer, 100, 140, 60,  255); }  
+                else if (color == 8)  { SDL_SetRenderDrawColor(renderer, 60,  130, 40,  255); }  
+                else if (color == 9)  { SDL_SetRenderDrawColor(renderer, 34,  90,  20,  255); }
+                else if (color == 10) { SDL_SetRenderDrawColor(renderer, 20,  60,  20,  255); }  
+                else if (color == 11) { SDL_SetRenderDrawColor(renderer, 140, 130, 120, 255); }  
+                else if (color == 12) { SDL_SetRenderDrawColor(renderer, 160, 150, 140, 255); }  
+                else if (color == 13) { SDL_SetRenderDrawColor(renderer, 200, 195, 190, 255); }  
+                else if (color == 14) { SDL_SetRenderDrawColor(renderer, 235, 240, 245, 255); }
+                else if (color == 15) { SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255); }  
                 SDL_RenderDrawPoint(renderer, x, y);
             }
         }
